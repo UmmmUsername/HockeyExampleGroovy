@@ -1,7 +1,4 @@
 import com.example.HockeyDatabase
-import com.squareup.sqldelight.db.SqlDriver
-import com.squareup.sqldelight.sqlite.driver.asJdbcDriver
-import com.zaxxer.hikari.HikariDataSource
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 

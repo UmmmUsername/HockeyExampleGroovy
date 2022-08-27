@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da35f24d-fcaa-484a-bbd7-b52bd9c7d173" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/sqldelight/com/example/sqldelight/hockey/data/HockeyPlayer.sq" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/sqldelight/com/example/sqldelight/hockey/HockeyPlayer.sq" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/sqldelight/v0__hockey.sqm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/sqldelight/v0__hockey.sqm" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +59,7 @@
       <list>
         <option value="SqlDelight Migration" />
         <option value="SqlDelight Table" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
