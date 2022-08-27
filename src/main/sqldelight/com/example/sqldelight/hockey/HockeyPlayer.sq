@@ -1,0 +1,7 @@
+selectAll:
+SELECT *
+FROM HockeyPlayer;
+
+insert:
+INSERT INTO HockeyPlayer(name)
+VALUES (?);

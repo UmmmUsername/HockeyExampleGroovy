@@ -1,0 +1,8 @@
+CREATE TABLE HockeyPlayer (
+  -- The variables will be called this way both in Postgres and Kotlin hence camel case
+  id BIGSERIAL NOT NULL PRIMARY KEY,
+  name TEXT NOT NULL
+);
+
+INSERT INTO HockeyPlayer (name)
+VALUES ('Ryan Getzlaf');

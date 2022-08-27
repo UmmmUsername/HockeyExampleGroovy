@@ -1,7 +1,18 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import com.example.HockeyDatabase
+import com.squareup.sqldelight.db.SqlDriver
+import com.squareup.sqldelight.sqlite.driver.asJdbcDriver
+import com.zaxxer.hikari.HikariDataSource
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+    val players = jdbcDriver.use { driver ->
+        with(HockeyDatabase(driver = driver).hockeyPlayerQueries) {
+            insert(name = "Sidney Crosby")
+            selectAll().executeAsList()
+        }
+    }
+
+    LoggerFactory.getLogger(Logger.ROOT_LOGGER_NAME)
+        .debug(players.toString())
 }

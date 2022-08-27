@@ -1,6 +1,27 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.squareup.sqldelight:gradle-plugin:1.5.3'
+    }
+}
+
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.7.10'
     id 'application'
+}
+
+apply plugin: 'com.squareup.sqldelight'
+
+sqldelight {
+    HockeyDatabase { // This will be the name of the generated database class.
+        packageName = "com.example"
+        dialect = "postgresql"
+        deriveSchemaFromMigrations = true
+    }
 }
 
 group = 'org.example'
@@ -11,6 +32,11 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.postgresql:postgresql:42.5.0'
+    implementation 'org.slf4j:slf4j-reload4j:2.0.0'
+    implementation 'com.zaxxer:HikariCP:5.0.1'
+    implementation 'com.squareup.sqldelight:jdbc-driver:1.5.3'
+
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
 }
 
